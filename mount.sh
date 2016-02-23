@@ -6,7 +6,7 @@ then
   echo 
   echo "Usage: $0 host:volume mountpoint"
   echo 
-  echo "Example: $0 /test_vol /mnt/glusterfs"
+  echo "Example: $0 172.0.0.2:/test_vol /mnt/glusterfs"
   echo
   echo "REQUIRES docker 1.10+"
   exit
