@@ -12,5 +12,6 @@ then
   exit
 fi
 
-alias docker=/root/containers/docker/docker-1.10.2 
+# alias docker=/root/containers/docker/docker-1.10.2 
+# The :shared at the end of -v shares mount with host
 docker  run --privileged -v $2:/mnt/mountpoint:shared --cap-add SYS_ADMIN glusterfs-mount-client $1 /mnt/mountpoint
