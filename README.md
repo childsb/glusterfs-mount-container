@@ -1,7 +1,4 @@
-# glusterfs-mount-container
-glusterfs mount running in a container accessible from the host.
-
-This requires Docker 1.10+.  To buildi the docker container:
+glusterfs-mount-container requires Docker 1.10+.  To build the docker container:
 ```
  ./b.sh
 ```
@@ -10,6 +7,8 @@ To mount a gluster volume, run:
 ```
  ./mount.sh host:volume mount_point
 ```
-The container will run but not terminate.  To unmount ctrl+c to kill.
+The container is available on the host at specified mount_point.  To unmount CTRL+C to kill container.
+
+For a dirty little gluster test container look here: https://github.com/childsb/containers/tree/master/gluster
 
 
